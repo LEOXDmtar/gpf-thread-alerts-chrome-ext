@@ -1,26 +1,33 @@
 {
-"update_url": "https://clients2.google.com/service/update2/crx",
-  
+  "update_url": "https://clients2.google.com/service/update2/crx",
   "manifest_version": 2,
-  "name": "Top Contributor Alerts",
-  "description": "Extension notifies on new topics on productforums.google.com.",
-  "version": "0.0.2",
+  "name": "GPF New Threads Alert",
+  "short_name": "gpfalerts",
+  "description": "Get notified when there are new threads in your forum",
+  "version": "0.1.4",
+  "minimum_chrome_version": "38",
+
   "icons": {
-  	"16": "img/16.png",
-  	"48": "img/48.png",
-    "128": "img/128.png"
+    "16": "img/icon16.png",
+    "128": "img/icon128.png"
+  },
+  "background": {
+    "scripts": ["js/jquery-2.1.3.min.js","js/jquery.timeago.js","js/date.js","functions.js","background.js"]
   },
   "options_page": "options.html",
   "browser_action": {
     "default_icon": "img/nothreads.png",
-    "default_title": "Top Contributor Alerts",
+    "default_title": "GPF Alerts",
     "default_popup": "popup.html"
   },
-  "background": {
-    "scripts": ["js/jquery-2.1.3.min.js","js/date.js","js/lib.js","js/bg.js"],
-    "persistent": false
-  },
-  "permissions": ["*://productforums.google.com/*", "alarms", "notifications", "contextMenus", "tabs", "storage"],
-  "web_accessible_resources": ["img/128.png"],
-  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+  "permissions": [
+    "notifications",
+    "storage",
+    "tabs",
+    "alarms",
+    "https://productforums.google.com/*",
+    "https://gdf-staging.sandbox.google.com/*",
+    "https://fonts.googleapis.com/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com; object-src 'self'"
 }

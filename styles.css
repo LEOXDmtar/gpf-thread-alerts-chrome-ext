@@ -1,0 +1,132 @@
+* {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight:300;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: #333;
+  height: 400px;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  min-width: 480px;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.thread-item:hover {
+  background-color: #F1F8E9;
+}
+
+core-toolbar {
+  background-color: #8BC34A;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0em;
+}
+
+core-header-panel {
+  height: 100%;
+}
+
+.thread-item {
+  padding-left: 10px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size:14px;
+}
+
+core-item.thread-item .title {
+  font-size: 1.1em;
+  font-weight: 300 !important;
+}
+
+core-item.thread-item .snippet {
+  font-size: 0.9em;
+}
+
+.time {
+  padding-right: 10px;
+  padding-bottom: 15px;
+  text-align: right;
+  font-size: 0.75em;
+  color: #c0c0c0;
+}
+
+#options-content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.close {
+  padding-right: 10px;
+  font-size: 0.75em;
+  position: absolute;
+  right: 0px;
+  bottom: 3px;
+}
+
+.close > core-icon{
+  margin-left: 13px;
+}
+
+.unread {
+  color: #c0c0c0;
+}
+
+.new {
+  color: green;
+}
+
+.read {
+  color: #c0c0c0;
+}
+
+paper-slider {
+  width: 100%;
+}
+
+paper-input {
+  width: 98%;
+  margin-left: 16px;
+}
+
+h5 {
+  font-size: 1.64rem;
+  line-height: 1.84rem;
+  margin: 0.82rem 0 0.65rem 16px;
+  font-weight: 400;
+}
+
+paper-button[raised].colored {
+  background: #4285f4;
+  color: #fff;
+}
+
+paper-button > core-icon {
+  margin-right: 4px;
+}
+
+.header {
+  padding: 1em;
+  background-color: #DCEDC8;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.zeroinbox {
+  margin-top: 50px;
+  margin-left: 130px;
+  width: 209px;
+}
+
