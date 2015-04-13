@@ -1,0 +1,26 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+  
+  "manifest_version": 2,
+  "name": "Top Contributor Alerts",
+  "description": "Extension notifies on new topics on productforums.google.com.",
+  "version": "0.0.2",
+  "icons": {
+  	"16": "img/16.png",
+  	"48": "img/48.png",
+    "128": "img/128.png"
+  },
+  "options_page": "options.html",
+  "browser_action": {
+    "default_icon": "img/nothreads.png",
+    "default_title": "Top Contributor Alerts",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["js/jquery-2.1.3.min.js","js/date.js","js/lib.js","js/bg.js"],
+    "persistent": false
+  },
+  "permissions": ["*://productforums.google.com/*", "alarms", "notifications", "contextMenus", "tabs", "storage"],
+  "web_accessible_resources": ["img/128.png"],
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}
